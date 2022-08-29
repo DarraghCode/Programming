@@ -42,7 +42,7 @@ def run_discord_bot():
             user_message = user_message[1:]
             await send_message(message, user_message, is_private=True)
         else:
-            await send_message(message, user_message, is_private=True)
+            await send_message(message, user_message, is_private=False)
 
 
     client.run(token)
